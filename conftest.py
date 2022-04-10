@@ -24,7 +24,7 @@ def browser(request):
         options.set_preference("intl.accept_languages", f'{language_name}')
         driver = webdriver.Firefox(options=options)
     else:
-        print('Please, select chrome or firefox bouwser')
+        print('Please, select chrome or firefox bowser')
     yield driver
     print("\nquit browser..")
     driver.quit()
