@@ -30,7 +30,7 @@ class ProductPage(BasePage):
         self.solve_quiz_and_get_code()
 
     def corrected_add_product(self):
-        assert self.get_product_name() in self.get_product_name_alert()
+        assert self.get_product_name() == self.get_product_name_alert()
 
     def corrected_add_price(self):
         product_price = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE)
