@@ -5,6 +5,7 @@ class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BUTTON = (By.XPATH, '//*[@id="default"]/header/div[1]/div/div[2]/span/a')
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class BasketPageLocators:
@@ -19,7 +20,10 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGIST_FORM = (By.CSS_SELECTOR, "#register_form")
-
+    RESIST_EMAIL_INPUT = (By.XPATH, ' //*[@id="id_registration-email"]')
+    RESIST_PASS1_INPUT = (By.XPATH, ' //*[@id="id_registration-password1"]')
+    RESIST_PASS2_INPUT = (By.XPATH, ' //*[@id="id_registration-password2"]')
+    RESIST_SUBMIT = (By.XPATH, ' //*[@id="register_form"]/button')
 
 class ProductPageLocators:
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
