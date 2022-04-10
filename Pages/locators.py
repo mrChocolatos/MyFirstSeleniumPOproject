@@ -25,6 +25,7 @@ class LoginPageLocators:
     RESIST_PASS2_INPUT = (By.XPATH, ' //*[@id="id_registration-password2"]')
     RESIST_SUBMIT = (By.XPATH, ' //*[@id="register_form"]/button')
 
+
 class ProductPageLocators:
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
     PRODUCT_NAME = (By.TAG_NAME, "h1")

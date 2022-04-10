@@ -25,7 +25,6 @@ class ProductPage(BasePage):
         assert self.is_disappeared(*ProductPageLocators.ALERT_ADD_PROD), \
             "Element was not disappeared"
 
-
     def write_code(self):
         self.solve_quiz_and_get_code()
 
